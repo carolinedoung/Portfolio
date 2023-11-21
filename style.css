@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0; 
+    padding: 0;
+    /* background-color: #DEF9FF; */
+    background-color: rgb(205, 218, 255);
+}
+
+
+header {
+    border: solid 2px;
+    display: flex;
+    justify-content: end;
+    height: 100vh;
+}
+
+/*navbar*/
+
+ul {
+    list-style-type: none;
+    /* margin: 0; */
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+        /* position: fixed; */
+    gap: 3em;
+}
+
+a {
+    border: solid 2px;
+
+}
+
+.mots {
+    border: solid 2px;
+    display: flex;
+    justify-items: space-around;
+    align-items: center;
+    
+
+}
+
+
+.apropos {
+    height: 100vh;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+

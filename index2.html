@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation de pétales de cerisier</title>
+    <link href="style2.css" rel="stylesheet">
+   
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const petals = [];
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        function createPetal() {
+            const x = Math.random() * canvas.width;
+            const y = canvas.height;
+            const radius = Math.random() * 5 + 5;
+            const speed = Math.random() * 2 + 1;
+
+            petals.push({ x, y, radius, speed });
+        }
+
+        function drawPetals() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (let i = 0; i < petals.length; i++) {
+                const petal = petals[i];
+                ctx.beginPath();
+                ctx.arc(petal.x, petal.y, petal.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'pink'; // Couleur des pétales
+                ctx.fill();
+
+                petal.y -= petal.speed;
+
+                if (petal.y + petal.radius < 0) {
+                    petals.splice(i, 1);
+                    i--;
+                }
+            }
+        }
+
+        function animate() {
+            createPetal();
+            drawPetals();
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+</html>
