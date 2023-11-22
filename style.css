@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Montserrat&family=Open+Sans:wght@300&family=Oswald:wght@700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Montserrat&family=Open+Sans:wght@300&family=Orbitron&family=Oswald:wght@700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -12,52 +17,97 @@ body {
     margin: 0; 
     padding: 0;
     /* background-color: #DEF9FF; */
-    background-color: rgb(205, 218, 255);
+    /* background-color: rgb(205, 218, 255); */
+    background-color: rgb(62, 60, 60);
+
 }
 
 
 header {
-    border: solid 2px;
-    display: flex;
-    justify-content: end;
+    border: solid red 2px;
+    /* display: flex;
+    justify-content: end; */
     height: 100vh;
 }
 
 /*navbar*/
 
-ul {
-    list-style-type: none;
-    /* margin: 0; */
+.navbar {
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
         /* position: fixed; */
-    gap: 3em;
+    /* gap: 3em; */
 }
 
+.nav-container {
+    background-color: rgb(33, 33, 37);
+    padding: 20px;
+    border: 2px solid purple;
+}
 a {
-    border: solid 2px;
+    border: solid white;
+    color:white;
+    font-family: "changa";
+
 
 }
 
+/* name et neon */
+h1 {
+    color: rgb(230, 236, 240);
+    font-size: 4em;
+    font-family: "Orbitron";
+}
+
+.name {
+    margin: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(111, 0, 255); /* for the 1px in the center */
+    border-radius: 100%;
+    box-shadow: 0 0 50px 70px rgb(111, 0, 255);
+}
+
+/* words cloud */
 .mots {
-    border: solid 2px;
+    border: solid red 2px;
+    border-radius: 100px;
     display: flex;
-    justify-items: space-around;
+    justify-items: flex-start;
     align-items: center;
-    
-
+    max-width: fit-content;  
 }
 
+li {
+    list-style-type: none;
+    color: white;
+    font-family: "changa";
+}
 
-.apropos {
+/* about */
+#apropos {
     height: 100vh;
+    border: 2px solid red;
 }
 
-img {
+.image {
     display: flex;
-    justify-content: center;
+    justify-content:left;
     align-items: flex-start;
 }
 
+
+/* projects */
+
+#projects {
+    height: 100vh;
+}
+
+/* contact */
+
+#contact {
+    height: 100vh;
+}
