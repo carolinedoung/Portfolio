@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +9,35 @@
 </head>
 <body>
     <header>
-        <nav class="nav-container">
-            <div class="navbar">
-                <a href="#" class="logo">Logo</a></li>
-                <a href="#apropos">A propos</a>
-                <a href="#projets">Projets</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-            <div class="name">
+        <div class="navbar-container">
+            <nav class="navbar">
+                <!-- <div class="logo-container"> -->
+                    <a href="#" class="logo">Logo</a>
+                <!-- </div> -->
+                <div class="nav-links">
+                    <ul>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="accueil-container">
+            <div class="neon1"></div>
+            <div class="title-accueil">
                 <h1>Caroline DOUNG</h1>
+                <!-- <h2>Etudiante en BUT MMI</h2> -->
             </div>
-            <div class="mots">
-                <ul class="words">
+                <!-- <h2>Développement web</h2> -->
+            
+           
+                <div class="neon2"></div>
+            
+            <div class="cloud-container">
+                <!-- <ul class="words">
                     <li>Développement web</li>
                     <li>BUT MMI</li>
                     <li>JS</li>
@@ -29,18 +45,72 @@
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Web Design</li>
-                </ul>
+                </ul> -->
+                <ul class="cloud" role="navigation" aria-label="Webdev word cloud">
+                    <li><a href="#" data-weight="4">Développement web</a></li>
+                    <li><a href="#" data-weight="1">JavaScript</a></li>
+                    <li><a href="#" data-weight="8">HTML</a></li>
+                    <li><a href="#" data-weight="4">Photographie</a></li>
+                    <li><a href="#" data-weight="5">UI/UX Design</a></li>
+                    <li><a href="#" data-weight="6">Web Design</a></li>
+                    <li><a href="#" data-weight="9">D3.js</a></li>
+                    <li><a href="#" data-weight="8">CSS</a></li>
+                    <li><a href="#" data-weight="8">Figma</a></li>
+                  </ul>
             </div>
-    </header>
-    <main>
-        <section id="apropos">
-            <div class="image">
-            <img src="./images/img_apropos.png">
-            </div>
+        </div>
 
+        <section id="apropos" class="apropos">
+            <div class="title-about">
+                <h2 class="section-title">À propos</h2>
+            </div>
+            <div class="about-content">
+                <div class="img-container">
+                    <img src="./images/img_apropos.png">
+                </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis iusto odit sed possimus doloremque. Minima optio reprehenderit nemo perferendis quod ipsum animi, sint harum at architecto quae quasi maxime quidem.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, eum, rem fugit unde iste, doloremque perferendis numquam officiis sint officia iusto? Ipsa consequuntur tempore nobis voluptate repudiandae veritatis dolorum id?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore, vel nisi aliquam maiores itaque ab rerum temporibus incidunt nostrum eos, neque nesciunt est veritatis illum accusantium animi atque sapiente?</p>
+            </div>
+            </div>
         </section>
-        <section id="projets">
-
+        <section id="projects">
+            <div class="title-projects">
+                <h2 class="section-title">Projets</h2>
+            </div>
+                <div class="projects-container">
+                    <div class="project">
+                        <a href="projet1.html" class="">
+                            <h3 class="project-title">DATAVIZ</h3>
+                            <img src="./images/projet1.png">
+                            <p>Site de datavisualisation</p>
+                        </a>
+                    </div>
+                    <div class="project">
+                        <a href="projet1.html" class="">
+                            <h3 class="project-title">DATAVIZ</h3>
+                            <img src="./images/projet1.png">
+                            <p>Site de datavisualisation</p>
+                        </a>
+                    </div>
+                    <div class="project">
+                        <a href="projet1.html" class="">
+                            <h3 class="project-title">DATAVIZ</h3>
+                            <img src="./images/projet1.png">
+                            <p>Site de datavisualisation</p>
+                        </a>
+                    </div>
+                    <div class="project">
+                        <a href="projet1.html" class="">
+                            <h3 class="project-title">DATAVIZ</h3>
+                            <img src="./images/projet1.png">
+                            <p>Site de datavisualisation</p>
+                        </a>
+                    </div>
+                </div>
         </section>
         <section id="contact">
 
