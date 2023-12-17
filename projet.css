@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Montserrat&family=Open+Sans:wght@300&family=Orbitron&family=Oswald:wght@700&family=Poppins&display=swap');
+
+html {
+    color: white;
+}
+/* .dataviz {
+    height: 100vh;
+    position: relative;
+    padding-top: 70px;
+    color: white;
+} */
+
+/* body {
+    font-family: 'Poppins', sans-serif;  
+
+} */
+
+.link-home {
+    margin: 30px;
+    color: white;
+    /* margin-top: 50px; */
+}
+
+h1 {
+    /* top: 0; */
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 5%;
+    /* margin-top: 5%; */
+}
+
+/* .gallery-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2em;
+
+} */
+
+#container {
+    border: 2px red;
+    height: 100vh;
+    position: relative;
+    top: 70px;
+    /* display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-between; */
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    /* margin-top: 100px; */
+}
+
+.content-project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 3em;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.text-project {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.img-project {
+    height: 50vh;
+    /* object-fit: contain; */
+}
+
+.date {
+    margin-bottom: 10px;
+}
+
+.link-project a {
+    margin-right: 20px;
+    color: white;
+}

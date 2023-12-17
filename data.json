@@ -1,0 +1,78 @@
+{
+
+
+    "project1" : {
+    "titre" : "DATAVIZ",
+    "links" : {
+        "page" :"https://github.com/",
+        "github" : "https://carolinedoung.github.io/SAE105/"},
+    "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis iusto odit sed possimus doloremque. Minima optio reprehenderit nemo perferendis quod ipsum animi, sint harum at architecto quae quasi maxime quidem.",
+    "technos": "https://code.visualstudio.com/",
+    "couleur": "#2F2BDF",
+    "image": "/crystalviz.png",    
+    "alt":""
+    },
+
+    "project2" : {
+    "titre" : "Portrait chinois",
+    "links" : {
+            "page" :"https://carolinedoung.github.io/SAE105/",
+            "github" : "https://github.com/carolinedoung/SAE105"},
+    "year" : "11/2022 - 01/2023",
+    "description" : "Dans le cadre de la première année de BUT MMI, nous avons eu un portrait chinois à réaliser. Nous devions choisir 7 analogies et créer un formmulaire permettant de créer une analogie supplémentaire. Ce projet étant le premier projet web que j'ai réalisé, il m'a permis d'exploiter concrètement les premiers cours de développement web et d'intégration du premier semestre.",
+    "technos": "/images/js.png",
+    "lien" : "https://code.visualstudio.com/",
+    "couleur": "#2F2BDF",
+    "image": "/images/portraitchinois4.png",
+    "alt":""
+    },
+
+    "project3" : {
+        "titre" : "Refonte Crunchyroll",
+        "links" : {
+            "page" :"https://github.com/",
+            "github" : "https://github.com/"},
+    "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis iusto odit sed possimus doloremque. Minima optio reprehenderit nemo perferendis quod ipsum animi, sint harum at architecto quae quasi maxime quidem.",
+    "technos": "https://code.visualstudio.com/",
+    "couleur": "#2F2BDF",
+    "image": "/images/crystalviz.jpg",
+    "alt":""
+    }, 
+
+    "project4" : {
+        "titre" : "Campagne de communication",
+        "links" : {
+            "page" :"https://github.com/",
+            "github" : "https://github.com/"},
+    "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis iusto odit sed possimus doloremque. Minima optio reprehenderit nemo perferendis quod ipsum animi, sint harum at architecto quae quasi maxime quidem.",
+    "technos": "https://code.visualstudio.com/",
+    "couleur": "#2F2BDF",
+    "image": "/images/crystalviz.jpg",
+    "alt":""
+    }, 
+
+    "project5" : {
+        "titre" : "CV vidéo",
+        "links" : {
+            "page" :"https://github.com/",
+            "github" : "https://github.com/"},
+    "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis iusto odit sed possimus doloremque. Minima optio reprehenderit nemo perferendis quod ipsum animi, sint harum at architecto quae quasi maxime quidem.",
+    "technos": "https://code.visualstudio.com/",
+    "couleur": "#2F2BDF",
+    "image": "/images/crystalviz.jpg",
+    "alt":""
+    },
+
+    "project6" : {
+        "titre" : "portrait chinois",
+        "links" : {
+            "page" :"https://github.com/",
+            "github" : "https://github.com/"},
+    "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis iusto odit sed possimus doloremque. Minima optio reprehenderit nemo perferendis quod ipsum animi, sint harum at architecto quae quasi maxime quidem.",
+    "technos": "https://code.visualstudio.com/",
+    "couleur": "#2F2BDF",
+    "image": "/images/crystalviz.jpg",
+    "alt":""
+    }
+}
+

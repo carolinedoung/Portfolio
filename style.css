@@ -3,10 +3,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Montserrat&family=Open+Sans:wght@300&family=Orbitron&family=Oswald:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Montserrat&family=Open+Sans:wght@300&family=Orbitron&family=Oswald:wght@700&family=Poppins&display=swap');
+
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: bor   der-box;
   margin:0;
   padding: 0;
 }
@@ -20,37 +23,23 @@ body {
     padding: 0;
     /* background-color: #DEF9FF; */
     /* background-color: rgb(205, 218, 255); */
-    background-color: rgb(31, 31, 31);
+    /* background-color: rgb(31, 31, 31); */
+    background-color: rgb(12, 12, 12);
     font-family: "changa";
 }
 
 
-
-
-/*navbar*/
-/* 
-nav {
-    background-color: black;
-    border: solid 2px yellow;
-} */
-
-/* .navbar {
-    display: flex;
-
-} */
-
-/* .logo-container {
-    border: 2px red solid;
-} */
-
 .navbar {
-    position: absolute;
+    position: fixed;
+    z-index: 100;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: blue;
+    background-color: rgba(120, 120, 120, 0);
+    backdrop-filter: blur(10px);
+    /* background-color: blue; */
 }
 
 .navbar a {
@@ -88,6 +77,7 @@ nav {
 
 @media screen and (max-width: 900px) {
     .navbar {
+        position: absolute;
         padding: 0;
     }
 
@@ -139,11 +129,13 @@ nav {
     width: 200px;
     height: 200px;
     background-color: rgb(111, 0, 255); /* for the 1px in the center */
+    backdrop-filter: blur(10px);
     border-radius: 100%;
     box-shadow: 0 0 50px 70px rgb(111, 0, 255);
     padding: 20px;
     position: absolute;
     top: 130px;
+
     /* height: 100%;
     width: 100%;
     backdrop-filter: blur(20%);
@@ -161,7 +153,7 @@ nav {
 
 h1 {
     color: rgb(230, 236, 240);
-    font-size: 4em;
+    font-size: 5em;
     font-family: "Orbitron";
     padding: 0px;
     /* margin-bottom: 50px; */
@@ -170,6 +162,7 @@ h1 {
 
 h2 {
     color: white;
+    font-family: "Orbitron";
 }
 
 
@@ -300,27 +293,47 @@ li {
     height: 100vh;
     /* position: absolute; */
     display: flex;
+    flex-direction: row;
     justify-content: space-between; 
     /* ou left? */
     align-items: center;
     text-align: center;
+    align-items: center;
+    /* background-image: url(./images/gradient.png);
+    background-repeat: no-repeat;
+    background-position: 100%; */
+
 }
+
+.gradient {
+    width: 30%;
+    margin-left: auto;
+
+}
+
+
 /* about */
 
 .section-title {
     color: white;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .title-about {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    /* text-align:center; */
+    align-items: center; */
+    text-align:center;
+    margin-bottom: 70px;
+    
 }
 
-#apropos {
+#about {
     height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
     border: 2px solid rgba(0, 30, 255, 0.927);
 }
 
@@ -329,9 +342,10 @@ li {
     flex-direction: row;
     gap: 3rem;
     justify-content: space-between;
+    align-items: center;
     max-width: 1100px;
     margin: 0 auto;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 
 }
 
@@ -352,10 +366,17 @@ li {
 /* responsive about */
 
 @media screen and (max-width: 1050px) {
+    #about {
+        height: auto;
+    }
     .about-content {
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
@@ -378,8 +399,9 @@ li {
 
 
 @media screen and (max-width: 450px) {
-    #apropos {
-        height: 180vh;
+    #about {
+        height: auto;
+        /* height: 180vh; */
     }
 
     .img-about {
@@ -400,7 +422,7 @@ li {
 /* projects */
 
 #projects {
-    height: 200vh;
+    height: auto;
     border: #ff0000 solid;
 
 }
@@ -419,7 +441,6 @@ li {
     column-gap: 200px;
     row-gap: 100px;
     padding: auto; */
-
     display: grid;
     max-width: 1100px;
     margin: auto;
@@ -434,37 +455,84 @@ li {
 
 @media screen and (max-width: 1200px) {
     .projects-container {
-        padding: 40px;  
+        padding: 40px;
+        height: auto;  
+    }
+
+    .project-box {
+        width: 100%;
+        height: 100%;
+        background-position: cover;
     }
 }
 @media screen and (max-width: 900px) {
     .projects-container {
         grid-template-columns: 1fr;
-        padding: 60px;  
+        /* padding: 60px;   */
+        height: auto;
+    }
+
+    
+    .project-box {
+        width: 100%;
+        height: 100%;
+        background-position: cover;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    
+    .project-box {
+        width: 100%;
+        height: 100%;
+        background-position: cover;
     }
 
 }
 .project img {
     width: 100%;
     object-fit: cover;
+    
 }
 
 .project a{
     color: white;
 }
 
-.project {
+/* .project { */
         /* max-width: 100%; */
-        border-radius: 10px;
+        /* border-radius: 10px;
         box-shadow: 0 5px 20px rgba(0,0,0,0.5);
         transition: all .3s;
         &:hover {
           box-shadow: 0px 10px 20px rgba(222, 223, 235, 0.8);
         }
-}
+} */
 
+.project-box {
+    height: 50vh;
+    /* max-width: 100%; */
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: all .3s;
+    &:hover {
+      box-shadow: 0px 10px 20px rgba(222, 223, 235, 0.8);
+    }
+}
 /* contact */
+
+#skills {
+    height: 100vh;
+}
 
 #contact {
     height: 100vh;
 }
+
+
+
