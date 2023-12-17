@@ -41,11 +41,7 @@ navLinks.classList.toggle("mobile-menu")
 //         // Appeler la fonction pour afficher les projets avec les données récupérées
 //         afficherProjets(data);
 //       })
-let data;
-let maVariable = "Valeur initiale";
-let i = 0;
-let keys;
-let ProjetsKeys;
+
 document.addEventListener('DOMContentLoaded', function () {
 fetch('data.json')
 .then((response) => response.json())

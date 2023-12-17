@@ -26,6 +26,8 @@ body {
     /* background-color: rgb(31, 31, 31); */
     background-color: rgb(12, 12, 12);
     font-family: "changa";
+    list-style: none;
+    text-decoration: none; 
 }
 
 
@@ -171,116 +173,7 @@ h2 {
     justify-content: center;
     align-items: center;
 } */
-.neon2 {
-    margin: 100px;
-    width: 50px;
-    height: 50px;
-    background-color: rgb(0, 42, 255); /* for the 1px in the center */
-    border-radius: 100%;
-    box-shadow: 0 0 50px 70px  rgb(0, 42, 255);
-    padding-left: 30px;
-    z-index: -1;
 
-}
-
-.tagcloud {
-    font-size: 16px;
-  }
-  .tagcloud--item {
-    padding: 2px 4px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    cursor: pointer;
-  }
-  .tagcloud--item:hover {
-    background-color: rgba(0,0,0,.1);
-    border: 1px solid #333;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    opacity: 1 !important;
-    z-index: 100 !important;
-  }
-  .light .tagcloud--item {
-    color: #fff;
-  }
-  .light .tagcloud--item:hover {
-    background-color: rgba(255,255,255,.1);
-    border: 1px solid #fff;
-  }
-/* words cloud */
-
-.cloud-container {
-    border: solid rgb(0, 4, 255) 2px;
-    border-radius: 50%;
-    padding: 10px;
-    width:350px;
-    height:350px;
-    /* display: flex;
-    align-items: center;
-    justify-content: right;
-    flex-direction: wrap; */    
-}
-
-ul.cloud {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    line-height: 2.75rem;
-    max-width: 400px;
-  }
-  
-  ul.cloud a {
-    /*   
-    Not supported by any browser at the moment :(
-    --size: attr(data-weight number); 
-    */
-    --size: 4;
-    --color: #a33;
-    color: var(--color);
-    font-size: calc(var(--size) * 0.25rem + 0.5rem);
-    display: block;
-    padding: 0.125rem 0.25rem;
-    position: relative;
-    text-decoration: none; 
-    animation: shake 1.5s; 
-    /* animation: 3s linear 1s infinite alternate slidein;
-    animation: fadeIn 0.5s linear; */
-    animation-iteration-count: infinite; 
-    
-}
-  
-  ul.cloud a[data-weight="1"] { --size: 4; }
-  ul.cloud a[data-weight="2"] { --size: 4; }
-  ul.cloud a[data-weight="3"] { --size: 4; }
-  ul.cloud a[data-weight="4"] { --size: 4; }
-  ul.cloud a[data-weight="5"] { --size: 4; }
-  ul.cloud a[data-weight="6"] { --size: 4; }
-  ul.cloud a[data-weight="7"] { --size: 4; }
-  ul.cloud a[data-weight="8"] { --size: 4; }
-  ul.cloud a[data-weight="9"] { --size: 4; }
-  
-
-ul.cloud a {
-    color: aliceblue;
-}
-
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
 
 li {
     list-style-type: none;

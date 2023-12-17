@@ -6,18 +6,36 @@ fetch('data.json')
         let data = json;
         data = data[url]
         console.log(data)
-        // document.querySelector('title').innerHTML = data[key].titre;
-        document.querySelector('.title-project').innerHTML += "<h1>" + data["titre"] + "</h1>";
-        document.querySelector('.content-project .img-project').innerHTML += "<img src='" + data["image"] + "' alt='[alt]'>"
+        
+        document.title = data["title"];
+        document.querySelector('.title-project').innerHTML += "<h1>" + data["title"] + "</h1>";
+        document.querySelector('.content-project .img-project').innerHTML += "<img class='img-shadow'src='" + data["image"] + "' alt='[alt]'></img>"
         document.querySelector('.content-project .text-project').innerHTML += "<p>" + data["description"] + "</p>" + "<p class='date'>" + data["year"] + "</p>" 
         document.querySelector('.link-project').innerHTML += "<a href=" + data["links"]["page"] + ">" + "Lien vers le projet" + "</a>" 
         document.querySelector('.link-project').innerHTML += "<a href=" + data["links"]["github"] + ">" + "Lien vers GitHub" + "</a>" 
-        for (const i in data["technos"]) {
-                const techno = data["technos"][i];
-                const lien_techno = data["lien"][i];
-                console.log(lien_techno)
-                document.querySelector('.technos').innerHTML += "<a href=" + lien + "><img src=" + data["technos"] + " alt='image techno'></a><br>"
+
+        const toolsContainer = document.querySelector('.tools .container-tools');
+        const toolsData = data["tools"];
+        
+        // Vérification existance de toolsdata
+        if (toolsData) {
+          // Vérification propriété 
+          for (let i = 1; i <= 4; i++) {
+            const toolKey = "tool" + i;
+        
+            // Vérification si la propriété existe avant de l'ajouter à la chaîne HTML
+            if (toolsData[toolKey]) {
+                    toolsContainer.innerHTML += "<p>" + toolsData[toolKey] + "</p>";
+            }
+          }
         }
+
+        // document.querySelector('.member').innerHTML += "<p>" + data["member"]["mb1"] + "</p>";
+        document.querySelector('.member').innerHTML += "<a href=" + data["member"]["mb1"] + ">" + data["member"]["mb1"] + "</a>";
+
+        
+        // document.querySelector('.gallery').innerHTML += "<img src=" + data["gallery"]["img1"] + " alt='image projet'></img>" +  "<img src=" + data["gallery"]["img1"] + " alt='image projet'></img>" +  "<img src=" + data["gallery"]["img1"] + " alt='image projet'></img>"
+        
         
         
     });

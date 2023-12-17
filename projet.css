@@ -66,9 +66,14 @@ h1 {
     flex-direction: column-reverse;
 }
 
-.img-project {
+/* .img-project {
     height: 50vh;
-    /* object-fit: contain; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    object-fit: contain;
+} */
+
+.img-shadow {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .date {
@@ -79,3 +84,31 @@ h1 {
     margin-right: 20px;
     color: white;
 }
+
+h3 {
+    margin: 20px;
+    font-size: 1.6em;
+}
+
+.tools div {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3em;
+ 
+}
+/* .tools img {
+    width: 5%;
+    height: 10%;
+} */
+
+.tools p {
+    color: rgb(255, 255, 255);
+    background-color: rgb(12, 12, 12);
+    border: solid 2px #ffffff;
+    border-radius: 4px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+}
+
