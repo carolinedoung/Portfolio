@@ -81,7 +81,7 @@
         "mb1" : "Caroline DOUNG",
         "mb2" : "",
         "mb3" : ""},
-    "image": "/images/isekai.jpg",
+    "image": "./images/isekai.jpg",
     "alt":"",
     "gallery" : {
         "img1" : "./images/isekai-g1.jpg", 
