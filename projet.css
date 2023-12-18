@@ -179,8 +179,86 @@ h3.mb {
 
     .gallery {
         display: flex;
-        
+        flex-direction: column;
+        row-gap: 2em;
+    }
 
+}
+
+@media screen and (max-width: 450px) {
+    .content-project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
+    .container-tools {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+    @media screen and (max-width: 750px) {
+    .content-project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
+    .container-tools {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    
+    .img-shadow {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
     }
 
 }

@@ -33,6 +33,7 @@ fetch('data.json')
         projectElement.style.backgroundImage = "url('" + data[key].image + "')";
         projectElement.style.backgroundSize = "100% 100%";
         projectElement.style.backgroundSize = "center";
+        projectElement.style.maxwidth = "100%";
         
         projectElement.innerHTML += "<p class='img-text'>" + data[key].title + "</p><br>";
         
