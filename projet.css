@@ -12,6 +12,9 @@ html {
 
 /* body {
     font-family: 'Poppins', sans-serif;  
+    background-image: url(./images/gradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
 } */
 
@@ -151,6 +154,7 @@ h3.mb {
 
 .img-gallery {
     width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 @media screen and (max-width: 900px) {

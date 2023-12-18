@@ -45,6 +45,9 @@ body {
     background-color: rgba(120, 120, 120, 0);
     backdrop-filter: blur(10px);
     /* background-color: blue; */
+    transition: all .3s;
+        :hover {
+        color : 0px 10px 20px #2F2BDF};
 }
 
 .navbar a {
@@ -101,7 +104,7 @@ body {
         left: 0;
         position: absolute;
         background-color: rgba(255, 255, 255, 0.265);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
         width: 100%;
         height: 100vh;
         display: flex;
@@ -133,7 +136,7 @@ body {
     margin: 100px;
     width: 200px;
     height: 200px;
-    background-color: rgb(111, 0, 255); /* for the 1px in the center */
+    background-color: rgb(111, 0, 255); 
     backdrop-filter: blur(10px);
     border-radius: 100%;
     box-shadow: 0 0 50px 70px rgb(111, 0, 255);
@@ -195,9 +198,10 @@ li {
     align-items: center;
     text-align: center;
     align-items: center;
-    /* background-image: url(./images/gradient.png);
+    background-image: url(./images/gradient.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 100%; */
+    /* background-position: 100%; */
 
 }
 
@@ -213,6 +217,8 @@ li {
 .section-title {
     color: white;
     font-size: 3em;
+    margin-bottom: 20px;
+
 }
 
 .title-about {
@@ -230,7 +236,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center; */
-    border: 2px solid rgba(0, 30, 255, 0.927);
+    /* border-top: 1px solid #2F2BDF; */
 }
 
 .about-content {
@@ -354,7 +360,7 @@ li {
 
 #projects {
     height: auto;
-    border: #ff0000 solid;
+    /* border: #ff0000 solid; */
 
 }
 
@@ -379,6 +385,7 @@ li {
     row-gap: 3em;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     /* grid-auto-rows: minmax(150px, auto); */
+    margin-bottom: 20px;
     
 }
 
@@ -454,6 +461,10 @@ li {
     &:hover {
       box-shadow: 0px 10px 20px rgba(222, 223, 235, 0.8);
     }
+}
+
+.img-text {
+    display: none;
 }
 /* contact */
 

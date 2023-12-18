@@ -11,8 +11,14 @@ fetch('data.json')
         document.querySelector('.title-project').innerHTML += "<h1>" + data["title"] + "</h1>";
         document.querySelector('.content-project .img-project').innerHTML += "<img class='img-shadow'src='" + data["image"] + "' alt='[alt]'></img>"
         document.querySelector('.content-project .text-project').innerHTML += "<p>" + data["description"] + "</p>" + "<p class='date'>" + data["year"] + "</p>" 
-        document.querySelector('.link-project').innerHTML += "<a href=" + data["links"]["page"] + ">" + "Lien vers le projet" + "</a>" 
-        document.querySelector('.link-project').innerHTML += "<a href=" + data["links"]["github"] + ">" + "Lien vers GitHub" + "</a>" 
+        const linkPage = data["links"]["page"];
+        const linkGithub = data["links"]["github"];
+        
+        if (linkPage) {
+            const linkProjectHTML = `<a href="${linkPage}">Lien vers le projet</a>${linkGithub ? `<a href="${linkGithub}">Lien vers GitHub</a>` : ''}`;
+            document.querySelector('.link-project').innerHTML += linkProjectHTML;
+        }
+        
 
         const toolsContainer = document.querySelector('.tools .container-tools');
         const toolsData = data["tools"];
@@ -30,8 +36,27 @@ fetch('data.json')
           }
         }
 
-        document.querySelector('.member').innerHTML += "<p class='name'>" + data["member"]["mb1"] + "</p>";
-        // document.querySelector('.member').innerHTML += "<a href=" + data["member"]["mb1"] + ">" + data["member"]["mb1"] + "</a>";
+        let membersHTML = "<p class='name'>";
+
+          // Boucle sur les membres
+          for (let i = 1; i <= 5; i++) {
+              const memberKey = "mb" + i;
+
+              // Vérification si le membre existe avant de l'ajouter
+              if (data["member"][memberKey]) {
+                  membersHTML += data["member"][memberKey];
+
+                  // Ajouter virgule si ce n'est pas le dernier membre
+                  if (i < 5 && data["member"]["mb" + (i + 1)]) {
+                      membersHTML += ", ";
+                  }
+              }
+          }
+
+          membersHTML += "</p>";
+          // Ajouter le contenu à la div
+          document.querySelector('.member').innerHTML += membersHTML;
+
 
         
         document.querySelector('.gallery').innerHTML += "<img class='img-gallery' src=" + data["gallery"]["img1"] + " alt='image projet'></img>" +  "<img class='img-gallery' src=" + data["gallery"]["img2"] + " alt='image projet'></img>" +  "<img class='img-gallery' src=" + data["gallery"]["img3"] + " alt='image projet'></img>"
