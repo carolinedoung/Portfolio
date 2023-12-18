@@ -473,7 +473,7 @@ li {
 }
 
 #contact {
-    height: 100vh;
+    height: 50vh;
 }
 
 .footer {
@@ -482,5 +482,12 @@ li {
     text-align: center;
 }
 
-
+p.item {
+    font-size: 1.5em;
+    color: white;
+    margin-left : 50px
+}
+a.link {
+    color: white;
+}
 

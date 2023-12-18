@@ -1,4 +1,3 @@
-
 // burger menu navbar
 
 const burgerMenu = document.querySelector(".burger-menu")
