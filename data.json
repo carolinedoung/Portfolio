@@ -9,12 +9,12 @@
     "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis iusto odit sed possimus doloremque. Minima optio reprehenderit nemo perferendis quod ipsum animi, sint harum at architecto quae quasi maxime quidem.",
     "tools": "https://code.visualstudio.com/",
     "couleur": "#2F2BDF",
-    "image": "/crystalviz.png",    
+    "image": "./images/crystalviz.jpg",    
     "alt":"",
     "gallery" : {
-        "img1" : "/crystalviz.png", 
-        "img2" : "/crystalviz.png", 
-        "img3" : "/crystalviz.png"}
+        "img1" : "./images/crystalviz.jpg", 
+        "img2" : "./images/crystalviz.jpg", 
+        "img3" : "./images/crystalviz.jpg"}
     },
 
     "project2" : {
@@ -25,7 +25,7 @@
     "year" : "11/2022 - 01/2023",
     "description" : "Dans le cadre de la première année de BUT MMI, nous avons eu un portrait chinois à réaliser. Nous devions choisir 7 analogies et créer un formulaire permettant de créer une analogie supplémentaire. Ce projet étant le premier projet web que j'ai réalisé, il m'a permis d'exploiter concrètement les premiers cours de développement web et d'intégration du premier semestre.",
     "couleur": "#2F2BDF",
-    "image": "/images/portraitchinois4.png",
+    "image": "./images/portraitchinois4.png",
     "alt":"",
     "tools": {
         "tool1" : "HTML",
@@ -36,9 +36,9 @@
         "mb1" : "Caroline DOUNG",
         "mb2" : ""},
     "gallery" : {
-        "img1" : "/images/portraitchinois-g1.jpg", 
-        "img2" : "/images/js.png", 
-        "img3" : "/images/js.png"}
+        "img1" : "./images/portraitchinois-g1.jpg", 
+        "img2" : "./images/portraitchinois-g2.jpg", 
+        "img3" : "./images/portraitchinois-g3.jpg"}
     },
 
     "project3" : {
@@ -48,16 +48,16 @@
             "github" : "https://github.com/"},
     "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis iusto odit sed possimus doloremque. Minima optio reprehenderit nemo perferendis quod ipsum animi, sint harum at architecto quae quasi maxime quidem.",
     "couleur": "#2F2BDF",
-    "image": "/images/crystalviz.jpg",
+    "image": "./images/crystalviz.jpg",
     "alt":"",
     "tools": {
         "tool1" : "HTML",
         "tool2" : "CSS",
         "tool3" : "JavaScript"},
     "gallery" : {
-        "img1" : "/crystalviz.png", 
-        "img2" : "/crystalviz.png", 
-        "img3" : "/crystalviz.png"}
+        "img1" : "./images/crystalviz.png", 
+        "img2" : "./images/crystalviz.png", 
+        "img3" : "./images/crystalviz.png"}
     }, 
 
     "project4" : {
@@ -71,9 +71,9 @@
     "image": "/images/crystalviz.jpg",
     "alt":"",
     "gallery" : {
-        "img1" : "/crystalviz.png", 
-        "img2" : "/crystalviz.png", 
-        "img3" : "/crystalviz.png"}
+        "img1" : "./images/crystalviz.png", 
+        "img2" : "./images/crystalviz.png", 
+        "img3" : "./images/crystalviz.png"}
     }, 
 
     "project5" : {
@@ -84,12 +84,12 @@
     "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis iusto odit sed possimus doloremque. Minima optio reprehenderit nemo perferendis quod ipsum animi, sint harum at architecto quae quasi maxime quidem.",
     "tools": "https://code.visualstudio.com/",
     "couleur": "#2F2BDF",
-    "image": "/images/crystalviz.jpg",
+    "image": "./images/crystalviz.jpg",
     "alt":"",
     "gallery" : {
-        "img1" : "/crystalviz.png", 
-        "img2" : "/crystalviz.png", 
-        "img3" : "/crystalviz.png"}
+        "img1" : "./images/crystalviz.png", 
+        "img2" : "./imaegs/crystalviz.png", 
+        "img3" : "./images/crystalviz.png"}
     },
 
     "project6" : {
@@ -100,12 +100,12 @@
     "description" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis iusto odit sed possimus doloremque. Minima optio reprehenderit nemo perferendis quod ipsum animi, sint harum at architecto quae quasi maxime quidem.",
     "tools": "https://code.visualstudio.com/",
     "couleur": "#2F2BDF",
-    "image": "/images/crystalviz.jpg",
+    "image": "./images/crystalviz.jpg",
     "alt":"",
     "gallery" : {
-        "img1" : "/crystalviz.png", 
-        "img2" : "/crystalviz.png", 
-        "img3" : "/crystalviz.png"}
+        "img1" : "./images/crystalviz.png", 
+        "img2" : "./images/crystalviz.png", 
+        "img3" : "./images/crystalviz.png"}
     }
 }
 

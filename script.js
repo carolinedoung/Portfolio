@@ -67,7 +67,7 @@ fetch('data.json')
         projectElement.style.backgroundSize = "center";
         
         projectElement.innerHTML += "<p class='img-text'>" + data[key].titre + "</p><br>";
-        projectElement.style.borderColor = data[key].couleur;  
+        // projectElement.style.borderColor = data[key].couleur;  
         
         projectElement.addEventListener('click', function () {
             console.log(key);

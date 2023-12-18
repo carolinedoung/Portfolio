@@ -141,8 +141,12 @@ h3.mb {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    column-gap: 2em;
-    margin: auto;
+    column-gap: 1em;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 .img-gallery {
