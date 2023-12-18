@@ -168,8 +168,14 @@ h3.mb {
     .container2 {
         display: flex;
         flex-direction: column;
-        align-items:end;
+        align-items: start;
         gap: 2rem;
+
+    }
+
+    .gallery {
+        display: flex;
+        
 
     }
 

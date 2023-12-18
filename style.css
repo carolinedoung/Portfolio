@@ -430,5 +430,11 @@ li {
     height: 100vh;
 }
 
+.footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
 
 
