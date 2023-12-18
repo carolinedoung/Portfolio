@@ -134,3 +134,17 @@ h3.mb {
     max-width: 1100px;
     margin: auto;
 }
+
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 2em;
+    margin: auto;
+}
+
+.img-gallery {
+    width: 100%;
+}

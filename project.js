@@ -34,7 +34,7 @@ fetch('data.json')
         // document.querySelector('.member').innerHTML += "<a href=" + data["member"]["mb1"] + ">" + data["member"]["mb1"] + "</a>";
 
         
-        document.querySelector('.gallery').innerHTML += "<img src=" + data["gallery"]["img1"] + " alt='image projet'></img>" +  "<img src=" + data["gallery"]["img1"] + " alt='image projet'></img>" +  "<img src=" + data["gallery"]["img1"] + " alt='image projet'></img>"
+        document.querySelector('.gallery').innerHTML += "<img class='img-gallery' src=" + data["gallery"]["img1"] + " alt='image projet'></img>" +  "<img class='img-gallery' src=" + data["gallery"]["img1"] + " alt='image projet'></img>" +  "<img class='img-gallery' src=" + data["gallery"]["img1"] + " alt='image projet'></img>"
         
         
         
