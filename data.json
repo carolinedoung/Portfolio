@@ -4,7 +4,7 @@
     "project1" : {
     "title" : "Projet à venir",
     "links" : {
-        "page" :"https://github.com/",
+        "page" :"https://www.youtube.com/",
         "github" : ""},
     "year" : "10/2023 - 12/2023",
     "description" : "Le projet à venir est mon CV vidéo. Il est encore en cours de conception. Il sera très prochainement disponible sur mon portfolio",
@@ -104,7 +104,7 @@
     "member": {
         "mb1" : "Caroline DOUNG",
         "mb2" : "Lou-Anne DUBILLE",
-        "mb3" : "Paauline GAZENGEL"},
+        "mb3" : "Pauline GAZENGEL"},
     "image": "./images/alencon.jpg",
     "alt":"",
     "gallery" : {
