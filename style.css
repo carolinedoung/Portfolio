@@ -216,6 +216,10 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center; */
+    display: flex;
+    gap: 20%;
+   flex-direction: column;
+   align-items: center;
     /* border-top: 1px solid #2F2BDF; */
 }
 
